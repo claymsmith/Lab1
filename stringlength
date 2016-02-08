@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+/*variable and function declaration*/
+int stringlength(char string[]);
+
+int main()
+{
+	char string[]= "the quick brown fox";
+
+	printf("the length of the string '%s' is %d \n", 
+		string, stringlength(string));
+
+}
+
+int stringlength(char string[])
+{
+	return strlen(string);
+}
