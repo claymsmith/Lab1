@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <float.h>
+/* Array and Variable Declaration */
+float temperatureC;
+
+int main()
+{
+	printf("FAHRENHEIT \t \t \t CELSIUS \n ");
+	for (float i=0.0; i<=300.0; i=i+1.0)
+	{
+		float temperatureC= ((i-32.0)*5.0)/9.0;
+		printf("%3.2f \t \t \t \t %3.2f \n", i, temperatureC);
+	}
+	return 0;
+}
